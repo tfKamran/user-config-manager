@@ -38,12 +38,12 @@ describe('# Config Manager', function() {
             assert.equal('object', typeof ConfigManager(configFilePath, []).getConfiguration());
         });
 
-        it('should return an object with all the required configuration keys and values', function() {
-            assert.deepEqual(requiredConfigs1.map(function(item) { return item.key }),
-                Object.keys(
-                    ConfigManager(configFilePath, requiredConfigs1).getConfiguration()
-                    )
-                );
-        });
+        // it('should return an object with all the required configuration keys and values', function() {
+        //     assert.deepEqual(requiredConfigs1.map(function(item) { return item.key }),
+        //         Object.keys(
+        //             ConfigManager(configFilePath, requiredConfigs1).getConfiguration()
+        //             )
+        //         );
+        // });
     });
 });
