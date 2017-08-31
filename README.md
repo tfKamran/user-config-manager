@@ -5,6 +5,8 @@
 
 [![NPM](https://nodei.co/npm/user-config-manager.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/user-config-manager/)
 
+[![Build Status](https://travis-ci.org/tfKamran/user-config-manager.svg?branch=master)](https://travis-ci.org/tfKamran/user-config-manager)
+
 It is a node module to help with user configurations in a node console application.
 
 ## Why to use?
