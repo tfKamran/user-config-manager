@@ -49,3 +49,7 @@ This will synchronously return an object containing key value pair like:
     }
 
 When invoked the first time, it will prompt the user with captions and store the user responses with the respective keys in the provided configuration file. Once the configurations are saved, it will pick up the saved configurations and there will be no prompts to the user for the keys already stored for any successive invokations to `getConfiguration()`.
+
+To clear the saved configurations, you can call the `clear()` function:
+
+    ConfigManager.clear();

@@ -28,6 +28,11 @@ module.exports = function (configFile, requiredConfigs) {
             });
 
             return configs;
+        },
+        clear: function () {
+            if (!fs.existsSync(_self.configFile)) {
+                fs.unlinkSync(_self.configFile);
+            }
         }
     };
 };
