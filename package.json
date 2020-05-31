@@ -1,6 +1,6 @@
 {
   "name": "user-config-manager",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "It is a node module to help with configurations in a node console application.",
   "main": "index.js",
   "scripts": {
