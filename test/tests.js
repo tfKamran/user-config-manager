@@ -46,4 +46,22 @@ describe('# Config Manager', function() {
         //         );
         // });
     });
+
+    describe('## clear()', function() {
+        beforeEach(function() {
+            if (!fs.existsSync(configFilePath)) {
+                fs.writeFileSync(configFilePath, '{}', 'utf-8');
+            }
+        });
+
+        it('should be a function', function() {
+            assert.equal('function', typeof ConfigManager(configFilePath, []).clear);
+        });
+
+        it('should delete configuration file', function() {
+            assert.equal(true, fs.existsSync(configFilePath));
+            ConfigManager(configFilePath, []).clear();
+            assert.equal(false, fs.existsSync(configFilePath));
+        });
+    });
 });
